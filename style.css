@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0; /* без отступов */
+}
+.header__img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover; /* круглое фото */
+}
+.h1 {
+  font-size: 24px; /* заголовок */
+}
+.header {
+    display: flex;           
+    align-items: center;     /* инфа на 30 пх от фото */
+    gap: 30px;               
+}
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto; /* по середине все */
+}
+.header__contacts {
+    margin-left: 276px; /* расстоение контактов */
+}
+hr {
+    margin: 30px 0; /* 30px сверху и снизу */
+    border: none;
+    height: 2px;
+    background-color: #000000;
+}
