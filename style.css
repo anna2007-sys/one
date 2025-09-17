@@ -27,7 +27,7 @@ hr {
     margin: 30px 0; /* 30px сверху и снизу */
     border: 1px;
     height: 2px;
-    background-color: #fba6e3;
+    background-color: #008000;
 }
 .about {
   margin-top: 20px;
@@ -40,21 +40,21 @@ hr {
 }
 
 .table__hobbies {
-  border: 1px solid #d813ad;
+  border: 1px solid #008000;
   border-radius: 10px 0 0 10px;
 }
 
 .table__hobbies-title,
 .table__social-title {
-  border-bottom: 1px solid #d813ad;
+  border-bottom: 1px solid green;
   text-align: center;
-  color: #d813ad;
+  color: green;
   padding: 5px 0;
   font-weight: bold;
 }
 
 .table__social {
-  border: 1px solid #d813ad;
+  border: 1px solid #008000;
   border-radius: 0 10px 10px 0;
 
 }
@@ -73,7 +73,7 @@ hr {
 
 .table__list-item:hover {
   cursor: pointer;
-  color: #d813ad;
+  color: green;
 }
 
 .table__list-item>a {
@@ -82,11 +82,71 @@ hr {
 }
 
 .title {
-  background: #d813ad;
+  background: green;
   border-radius: 10px;
   text-align: center;
   color: white;
   font-weight: bold;
   padding: 5px 0;
   margin-top: 60px;
+}
+
+.technologies {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.technologies__item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.technologies__item>img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+
+}
+
+.technologies__item:hover {
+  box-shadow: 0 4px 20px 0 #5a9645;
+  cursor: pointer;
+  background: green;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+
+.form__input,
+.form__textarea {
+  border: 1px solid #B8B8B8;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.form__textarea,
+.form__button {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.form__button {
+  width: fit-content;
+  margin: 0 auto;
+  color: white;
+  background: green;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
 }
